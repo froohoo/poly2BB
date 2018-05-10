@@ -42,8 +42,7 @@ def main(args):
                 KITTI['occluded'] = '0'
             
             KITTI['type']         =  obj.find('name').text
-            KITTI['truncated']    =  '0.0'          
-            KITTI['occluded']     =  '0.0'            
+            KITTI['truncated']    =  '0.0'                   
             KITTI['alpha']        =  '0.0'
             KITTI['left']         = min(xcoords)
             KITTI['right']        = max(xcoords)
