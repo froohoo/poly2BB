@@ -43,21 +43,22 @@ def main(args):
             
             KITTI['type']         =  obj.find('name').text
             KITTI['truncated']    =  '0.0'          
+            KITTI['occluded']     =  '0.0'            
             KITTI['alpha']        =  '0.0'
             KITTI['left']         = min(xcoords)
             KITTI['right']        = max(xcoords)
             KITTI['top']          = min(ycoords)
             KITTI['bottom']       = max(ycoords)
-            KITTI['height']       = '-1'
-            KITTI['width']        = '-1'
-            KITTI['length']       = '-1'
-            KITTI['locx']         = '-1000'
-            KITTI['locy']         = '-1000'
-            KITTI['locz']         = '-1000'
-            KITTI['roty']         = '-10'
+            KITTI['height']       = '0.0'
+            KITTI['width']        = '0.0'
+            KITTI['length']       = '0.0'
+            KITTI['locx']         = '0.0'
+            KITTI['locy']         = '0.0'
+            KITTI['locz']         = '0.0'
+            KITTI['roty']         = '0.0'
             
             KITTIString = ""
-            for key in ['type', 'truncated','occluded', 'alpha', 'left', 'right', 'top', 'bottom', 'height', 'width', 'length', 'locx', 'locy', 'locz', 'roty']:
+            for key in ['type', 'truncated','occluded', 'alpha', 'left', 'top', 'right', 'bottom', 'height', 'width', 'length', 'locx', 'locy', 'locz', 'roty']:
                 KITTIString += str(KITTI[key]) + " "
             outfile.write(KITTIString + "\n")
         outfile.close()
@@ -94,4 +95,3 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     main(args)
-
