@@ -44,7 +44,7 @@ class converter(Thread):
             tree = ET.parse(infile)
             root = tree.getroot()
             imgname = root.find('filename').text
-            outfile = open(self.outDir +"/" + imgname.split('.')[0] + '.txt', 'w')
+            outfile = open(os.path.join(self.outDir, imgname.split('.')[0].strip() + ".txt"), 'w')
             for obj in root.findall('object'):
                 # labelme retains delted objects
                 if obj.find('deleted').text == '1': continue
