@@ -22,7 +22,7 @@ LabelMe annotations are stored as XML as an annotation element. I believe the in
  Each object contains n coordinates of a polygon (pt elements). Since the KITTI format only supports bounding boxes poly2BB defines the bounding box by extracting the largest and smallest x and y coordinates from the polygon. 
 
  ## KITTI Format
- ![from https://github.com/NVIDIA/DIGITS/tree/master/digits/extensions/data/objectDetection](https://github.com/NVIDIA/DIGITS/tree/master/digits/extensions/data/objectDetection)
+ Chart below from ![https://github.com/NVIDIA/DIGITS/tree/master/digits/extensions/data/objectDetection](https://github.com/NVIDIA/DIGITS/tree/master/digits/extensions/data/objectDetection)
  
  #Values    Name      Description
 ----------------------------------------------------------------------------
