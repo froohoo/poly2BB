@@ -11,19 +11,19 @@ Polygon to Bounding Box (poly2BB) is a tool for converting the XML annotations p
 ## LabelMe Format
 
 LabelMe annotations are stored as XML as an annotation element. I believe the intent is for LabelMe to enable multi-user functionaity for image annotation and thus each annotation element represents a the annotations of a unique user. Within the annotation element the tags are:
-'''
+```
  - filename:       name image file associated with this annotation
  - folder:         parent directory of image file on the LabelMe server
  - source:         user who made annotations
  - object:         an annotated object
  - imagesize:      image dimensions
  - object:         an annotated object within the image
- '''
+```
  Each object contains n coordinates of a polygon (pt elements). Since the KITTI format only supports bounding boxes poly2BB defines the bounding box by extracting the largest and smallest x and y coordinates from the polygon. 
 
  ## KITTI Format
  Chart below from [https://github.com/NVIDIA/DIGITS/tree/master/digits/extensions/data/objectDetection](https://github.com/NVIDIA/DIGITS/tree/master/digits/extensions/data/objectDetection)
- '''
+ ```
  #Values    Name      Description
 ----------------------------------------------------------------------------
    1    type         Describes the type of object: 'Car', 'Van', 'Truck',
@@ -42,4 +42,4 @@ LabelMe annotations are stored as XML as an annotation element. I believe the in
    1    rotation_y   Rotation ry around Y-axis in camera coordinates [-pi..pi]
    1    score        Only for results: Float, indicating confidence in
                      detection, needed for p/r curves, higher is better.
-'''
+```
