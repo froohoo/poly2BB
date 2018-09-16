@@ -1,6 +1,6 @@
 # poly2BB
 
-Polygon to Bounding Box (poly2BB) is a utility for converting the XML annotations produced by MIT's [LabelMe Tool](http://labelme.csail.mit.edu "MIT Label Me") into the [KITTI](http://www.cvlibs.net/datasets/kitti/index.php "Karlsruhe Institute") annotation format. The original impetus for puting poly2BB together was that I had annotated my data in LabelMe, but the training tool I was using at the time, Nvidia Digits, only supported the KITTI format. Poly2BB currently only converts the polygon information as well as a limited conversion of the occluded tag.
+Polygon to Bounding Box (poly2BB) is a utility for converting the XML annotations produced by MIT's [LabelMe Tool](http://labelme.csail.mit.edu "MIT Label Me") into the [KITTI](http://www.cvlibs.net/datasets/kitti/index.php "Karlsruhe Institute") annotation format. The original impetus for puting poly2BB together was that I had annotated my data in LabelMe, but the training tool I was using at the time, Nvidia Digits, only supported the KITTI format. LabelMe also has extended functionality like image masking but  Poly2BB currently only converts the polygon information as well as a limited conversion of the occluded tag.
 
 ## Requirements:
 - Python
