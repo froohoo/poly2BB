@@ -45,7 +45,7 @@ LabelMe annotations are stored as XML as an annotation element.  Within the anno
 ```
  ### Sample of an output KITTI file
 
-The below is a sample of a file that was processed by poly2BB. In this case, there are 16 objects that were present in the LabelMe  annotation.
+Below is a sample of a file that was processed by poly2BB. In this case, there are 16 objects that were present in the LabelMe  annotation.
 
  ```
 lego_or_2x2_plate 0.0 0 0.0 843 563 1091 795 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
