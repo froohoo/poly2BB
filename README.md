@@ -43,3 +43,25 @@ LabelMe annotations are stored as XML as an annotation element.  Within the anno
    1    score        Only for results: Float, indicating confidence in
                      detection, needed for p/r curves, higher is better.
 ```
+ ### Sample of an output KITTI file
+
+The below is a sample of a file that was processed by poly2BB. In this case, there are 16 objects that were present in the LabelMe  annotation.
+
+ ```
+lego_or_2x2_plate 0.0 0 0.0 843 563 1091 795 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_or_2x1_plate 0.0 0 0.0 595 292 813 491 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_bk_1x1_plate 0.0 0 0.0 1191 1242 1337 1386 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_or_d1_lens 0.0 0 0.0 762 804 874 912 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_or_1x4_scallop 0.0 0 0.0 1739 1054 1956 1475 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_bk_1x6_plate 0.0 0 0.0 1346 343 1729 917 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_gn_d1_lens 0.0 0 0.0 1385 222 1498 335 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_1x12_wt_plate 0.0 0 0.0 407 770 1351 1560 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_cl_d2_lens 0.0 0 0.0 446 412 649 611 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_gy_r3_qtr-cir-plate 0.0 0 0.0 1677 410 1984 719 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_gy_r3_qtr-cir-plate 0.0 0 0.0 1836 711 2208 1028 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_gy_2x4_plate 0.0 0 0.0 910 1214 1286 1648 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_gy_4x2_isotrap 0.0 0 0.0 835 236 1115 576 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_wt_2x6_plate 0.0 0 0.0 1328 1130 1790 1735 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_gy_2x2_block-axle 0.0 0 0.0 850 794 1132 1041 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+lego_figure_pilot 0.0 0 0.0 360 983 884 1316 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+```
